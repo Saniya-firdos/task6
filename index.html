@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery| Mainflow | TASK-6| </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Image Gallery</h1>
+    </header>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
+                <div class="caption">Beautiful Landscape</div>
+            </div>
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+                <div class="caption">City Skyline</div>
+            </div>
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+                <div class="caption">Mountain View</div>
+            </div>
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+                <div class="caption">Serene Lake</div>
+            </div>
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+                <div class="caption">Desert Sunset</div>
+            </div>
+            <div class="image-card">
+                <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
+                <div class="caption">Forest Trail</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
